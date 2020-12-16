@@ -89,6 +89,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBasePack\MSP_Game_Base.cs" />
+    <Compile Include="DataBasePack\MSP_Item_ETC.cs" />
+    <Compile Include="DataBasePack\MSP_Localization.cs" />
     <Compile Include="DataBasePack\MSP_Shop.cs" />
     <Compile Include="ExcelToData.cs">
       <SubType>Form</SubType>

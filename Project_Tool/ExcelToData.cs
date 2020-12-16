@@ -182,6 +182,11 @@ namespace Project_Tool
             if (sheetName.Equals("Game_Base") == true)
                 result = new MSP_Game_Base(Keyvalue);
 
+            if (sheetName.Equals("Localization") == true)
+                result = new MSP_Localization(Keyvalue);
+
+            if (sheetName.Equals("Item_ETC") == true)
+                result = new MSP_Item_ETC(Keyvalue);
 
             return result;
         }
