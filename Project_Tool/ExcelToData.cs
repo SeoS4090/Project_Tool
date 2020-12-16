@@ -158,7 +158,7 @@ namespace Project_Tool
 
                 foreach (var beforeMSP in sheetData.Value)
                 {
-                    var mspData = GetMSPData(sheetData.Key ,beforeMSP.Value);
+                    var mspData = GetMSPData(sheetData.Key ,beforeMSP);
                     MSP_Dictionary_Data.Add(beforeMSP.Key, mspData);
                 }
 
@@ -172,15 +172,15 @@ namespace Project_Tool
             Process.Start(folderPath);
         }
 
-        private object GetMSPData(string sheetName, Dictionary<string, object> data)
+        private object GetMSPData(string sheetName, KeyValuePair<string, Dictionary<string, object>> Keyvalue)
         {
             object result = null;
 
             if (sheetName.Equals("Shop") == true)
-                result = new MSP_Shop(data);
+                result = new MSP_Shop(Keyvalue);
 
             if (sheetName.Equals("Game_Base") == true)
-                result = new MSP_Game_Base(data);
+                result = new MSP_Game_Base(Keyvalue);
 
 
             return result;
