@@ -30,36 +30,40 @@ namespace Project_Tool
         private void InitializeComponent()
         {
             this.ExcelToData = new System.Windows.Forms.Button();
-            this.MessagePack_Test_Button = new System.Windows.Forms.Button();
+            this.Btn_MapTool = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ExcelToData
             // 
-            this.ExcelToData.Location = new System.Drawing.Point(12, 12);
+            this.ExcelToData.Location = new System.Drawing.Point(14, 15);
+            this.ExcelToData.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ExcelToData.Name = "ExcelToData";
-            this.ExcelToData.Size = new System.Drawing.Size(100, 25);
+            this.ExcelToData.Size = new System.Drawing.Size(114, 31);
             this.ExcelToData.TabIndex = 0;
             this.ExcelToData.Text = "Excel->Data";
             this.ExcelToData.UseVisualStyleBackColor = true;
             this.ExcelToData.Click += new System.EventHandler(this.ExcelToData_Click);
             // 
-            // MessagePack_Test_Button
+            // Btn_MapTool
             // 
-            this.MessagePack_Test_Button.Location = new System.Drawing.Point(122, 12);
-            this.MessagePack_Test_Button.Name = "MessagePack_Test_Button";
-            this.MessagePack_Test_Button.Size = new System.Drawing.Size(100, 25);
-            this.MessagePack_Test_Button.TabIndex = 1;
-            this.MessagePack_Test_Button.Text = "MSP Test";
-            this.MessagePack_Test_Button.UseVisualStyleBackColor = true;
-            this.MessagePack_Test_Button.Click += new System.EventHandler(this.MSP_Test_Btn_Click);
+            this.Btn_MapTool.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_MapTool.Location = new System.Drawing.Point(139, 15);
+            this.Btn_MapTool.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Btn_MapTool.Name = "Btn_MapTool";
+            this.Btn_MapTool.Size = new System.Drawing.Size(114, 31);
+            this.Btn_MapTool.TabIndex = 1;
+            this.Btn_MapTool.Text = "Map Tool";
+            this.Btn_MapTool.UseVisualStyleBackColor = true;
+            this.Btn_MapTool.Click += new System.EventHandler(this.Map_Tool_Btn_Click);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(234, 51);
-            this.Controls.Add(this.MessagePack_Test_Button);
+            this.ClientSize = new System.Drawing.Size(267, 64);
+            this.Controls.Add(this.Btn_MapTool);
             this.Controls.Add(this.ExcelToData);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Main";
             this.Text = "Project Tool";
             this.ResumeLayout(false);
@@ -69,7 +73,7 @@ namespace Project_Tool
         #endregion
 
         private System.Windows.Forms.Button ExcelToData;
-        private System.Windows.Forms.Button MessagePack_Test_Button;
+        private System.Windows.Forms.Button Btn_MapTool;
     }
 }
 

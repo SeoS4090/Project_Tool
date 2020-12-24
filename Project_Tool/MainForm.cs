@@ -14,6 +14,7 @@ namespace Project_Tool
     public partial class Main : Form
     {
         public ExcelToData excltoData;
+        public Maptool maptool;
 
         public Main()
         {
@@ -27,8 +28,14 @@ namespace Project_Tool
             this.Hide();
         }
 
-        private void MSP_Test_Btn_Click(object sender, EventArgs e)
+        private void Map_Tool_Btn_Click(object sender, EventArgs e)
         {
+
+            maptool = new Maptool(this);
+            maptool.Show();
+            this.Hide();
+
+
         }
     }
 }

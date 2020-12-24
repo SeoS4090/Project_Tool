@@ -97,7 +97,7 @@ namespace Project_Tool
                                 {
                                     string DataKey = sheet.Cells[y, 1].Value as string;
 
-                                    if (DataKey == "IGNORE")
+                                    if (DataKey == "IGNORE" || DataKey == null)
                                         continue;
 
                                     Dic_Data[sheet.Name].Add(DataKey, new Dictionary<string, object>());
@@ -188,6 +188,8 @@ namespace Project_Tool
             if (sheetName.Equals("Item_ETC") == true)
                 result = new MSP_Item_ETC(Keyvalue);
 
+            if (sheetName.Equals("Game_Stage") == true)
+                result = new MSP_Game_Stage(Keyvalue);
             return result;
         }
     }
