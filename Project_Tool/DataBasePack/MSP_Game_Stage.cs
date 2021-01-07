@@ -13,7 +13,7 @@ public class MSP_Game_Stage
     [Key(4)] public int Width;
     [Key(5)] public int Height;
     [Key(6)] public List<int> Map;
-    [Key(6)] public int ClearCount;
+    [Key(7)] public int ClearCount;
 
     public MSP_Game_Stage() { }
 
